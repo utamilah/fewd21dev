@@ -1,0 +1,20 @@
+﻿
+body {
+	background: #ffe;
+	border: 5px solid #900;
+	margin: 0px;
+	padding: 10px;
+	font-family: Roboto;
+}
+
+img {
+	border: 5px solid #900;
+}
+
+.nutHeader {
+	color: #887;
+}
+
+.myGiantLink {
+	color: #900;
+}
