@@ -1,0 +1,66 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+h1 {
+	background: #ff6666;
+	padding: 15px;
+	border: 5px solid black;
+	font-family: Oswald;
+}
+
+p {
+	background: #809fff;
+	color: white;
+	padding: 15px;
+	border: 5px solid black;
+	font-family: Droid Sans;
+}
+
+code {
+	color: black;
+	background: #efefef;
+	padding: 2px 5px;
+	border: 1px solid black;
+}
+
+.different code {
+	background: green;
+}
+
+.sitenav {
+	background: #efefef;
+	padding: 0;
+	margin: 0;
+	font-family: Oswald;
+}
+
+.sitenav li {
+	display: inline-block;
+}
+
+.sitenav a {
+	padding: 20px;
+    background: #ff6666;
+    border-right: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sitenav a:hover {
+	background: #660033;
+}
+
+.sitenav a:focus {
+	border: 3px solid #660033;
+}
