@@ -17,7 +17,7 @@
 
 .body {
 	float: left;
-	width: 80%;
+	width: 85%;
 }
 
 .ad {
@@ -35,17 +35,12 @@
 	float: left;
 }
 
-.pageHeader {
-	width: 20%;
-	float: left;
-}
-
-.pageHeader .placeholder {
-	height: 90px;
+.header2 .placeholder {
+	height: 80px;
 }
 
 .main .placeholder {
-	height: 200px;
+	height: 280px;
 }
 
 .thumbnail .placeholder {
@@ -53,6 +48,15 @@
 }
 
 .pageFooter .placeholder {
+	height: 90px;
+}
+
+.pageHeader {
+	width: 20%;
+	float: left;
+}
+
+.pageHeader .placeholder {
 	height: 90px;
 }
 
