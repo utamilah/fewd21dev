@@ -1,0 +1,172 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+body {
+	color: #444;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+a {
+	color: #d00;
+	text-decoration: none;
+	-webkit-transition: all 300ms;
+}
+
+a:hover {
+	color: #a00;
+}
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.logo {
+	font-size: 3em;
+	display: inline;
+	font-weight: 300;
+	margin-right: .5em;
+}
+
+.tagline {
+	display: inline;
+	font-size: 1.5em;
+	font-weight: 300;
+	color: #888;
+}
+
+.menu-main, .menu-footer {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+	.menu-main li{
+		display: inline-block;
+		width: 16.66%;
+		font-size: 25px;
+		float: left;
+	}
+
+	.menu-main a {
+		display: block;
+		color: white;
+		background: black;
+		padding: 15px;
+		border-right: 1px solid white;
+		text-align: center;
+	}
+
+	.menu-main a:hover {
+		background-color: #900;
+	}
+
+
+.articles {
+	width: 66%;
+	float: left;
+}
+
+.posts {
+	margin-top: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #CCC;
+}
+
+	.posts h1 {
+		font-weight: 300;
+		margin-top: 0;
+	}
+
+	.posts p:first-letter {
+		color: #CCC;
+		font-size: 6em;
+		float: left;
+		line-height: 1;
+		margin: -.1em .1em 0 -.1em;
+	}
+
+	.posts a {
+		float: right;
+		font-weight: 700;
+	}
+
+
+.ad {
+	border-bottom: 1px solid #CCC;
+	padding: 20px;
+}
+
+.about {	
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 20px;
+}
+
+	.about p {
+		color: #888;
+	}
+
+.date {
+	font-size: 2em;
+	color: #CCC;
+}
+
+.additional {
+	width: 29%;
+	float: right;
+	margin-top: 100px;
+}
+
+	.additional h1 {
+		color: #888;
+		font-size: 22px;
+	}
+
+img {
+	width: 100%;
+}
+
+.menu-footer {
+	width: 100%;
+	clear: both;
+	padding-top: 25px;
+}
+
+.menu-footer li {
+	display: inline-block;
+}
+
+.menu-footer li:after {
+	content: '|';
+	color: #CCC;
+	padding: 5px;
+}
+
+.menu-footer li:last-child::after {
+    content: '';
+}
+
+footer p {
+	color: #BBB;
+}
+
+
+.ad {
+
+}

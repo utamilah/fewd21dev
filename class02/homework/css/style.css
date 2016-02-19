@@ -27,7 +27,7 @@ body {
      margin: auto;
 }
 
-.container h1 {
+.benefits h1 {
      font-size: 40px;
      font-weight: 600;
      margin-bottom: 40px;
@@ -110,14 +110,16 @@ ul {
 .testimonial p {
      color: #fff;
      font-size: 36px;
-     font-style: italic;
-     font-weight: 300;
      text-align: center;
 }
 
-.quote {
-     font-weight: 600;
-     font-style: normal;
+.testimonial .quote {
+     font-weight: 300;
+     font-style: italic;
+}
+
+.testimonial .quoter {
+     font-weight: 800;
 }
 
 .calltoaction {
@@ -170,7 +172,11 @@ footer p {
      font: 10px;
 }
 
-
+footer .fa {
+     font-size: 50px;
+     padding: 25px;
+     color: white;
+}
 
 
 
