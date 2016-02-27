@@ -3,6 +3,7 @@ $( document ).ready(function() {
 
     $('.readmore').click(readMore);
     $('.readless').click(readLess);
+    $('.learnmore').click(learnMore);
 
     function readMore (e) {
     e.preventDefault();
@@ -15,6 +16,12 @@ $( document ).ready(function() {
     e.preventDefault();
       $('.hide').slideUp();
       $('.readmore').toggle();
+    }
+
+      function learnMore (e) {
+      e.preventDefault();
+      $('#learnMoretext').slideToggle();
+      $('.learnmore').hide();
     }
 
 });
