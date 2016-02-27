@@ -14,8 +14,9 @@ $( document ).ready(function() {
 
     function readLess (e) {
     e.preventDefault();
-      $('.hide').slideUp();
-      $('.readmore').toggle();
+      $('#show-this-on-click').slideUp();
+      $('.readmore').show();
+      $('.readless').toggle();
     }
 
       function learnMore (e) {
