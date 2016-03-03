@@ -1,0 +1,12 @@
+body.dark {
+  background: black;
+}
+
+button.yellow {
+	background: yellow;
+}
+
+button {
+	padding: 10px;
+	font-size: 24px;
+}
