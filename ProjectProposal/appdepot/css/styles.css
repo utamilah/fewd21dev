@@ -415,53 +415,19 @@ h1 {
 	display: none;
 }
 
-.inline_content {
-	width: 500px;
-	padding: 10px;
+#inline-content {
+	max-width: 500px;
 }
 
-.image {
-	width: 50%;
-	float: left;
+	#inline-content p {
+	float: right;
 }
 
-.inline-copy {
-	margin-top:;
-	width: 45%;
-	float: left;
-}
-
-	.inline-copy h1:after {
-		content: "";
-		display: block;
-		background: #A5A5A5;
-		width: 110px;
-		height: 10px;
-		margin-top: 10px;
-	}
-
-/*
-#inline_fb,
-#inline_insta
-#inline_mine
-#inline_netflix
-#inline_quiz
-#inline_snap
-#inline_sound
-#inline_spot
-#inline_twitter
-#inline_dots
-#inline_vine
-#inline_yt
-*/
-
-
-/*
 .inline-fb {
 	padding: 10px;
     background: #ccc;
     border-radius: 10px;
-}*/
+}
 
 /*//////Hidden Colorbox Info//////*/ 
 

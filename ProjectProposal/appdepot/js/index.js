@@ -1,5 +1,4 @@
-$(document).ready(function(e){
+$(document).ready(function(){
 	//Examples of how to assign the Colorbox event to elements			
-	$(".inline").colorbox({inline:true});
-			
+	$(".inline").colorbox({inline:true});						
 });
