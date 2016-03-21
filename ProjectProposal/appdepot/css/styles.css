@@ -46,7 +46,7 @@ h1 {
 }
 
 .hero {
-	height: 100vh;
+	height: 760px;
 	background: url('../img/herobackground.png');
 	background-size: cover;
 }
@@ -535,3 +535,91 @@ footer {
 	.sources span {
 		font-weight: 700;
 	}
+
+/*///////MEDIA QUERIES///////*/
+@media only screen and (max-width: 970px)  {
+
+	.additionals ul li {
+		width: 50%;
+		float: left;
+	}
+
+	.appHeroes {
+		margin: 0 auto;
+	}
+
+	.appHeroes .wrapper {
+		float: none;
+		width: 90%;
+		padding: 0;
+		margin-bottom: 50px;
+	}
+
+	.appHeroes img {
+		float: none;
+	}
+
+	.popappsSection {
+		height: 1300px;
+	}
+}
+
+@media only screen and (max-width: 840px) {
+	/*//////////APP HEROES/////////*/
+	.statBox {
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 690px)  {
+
+	.newappsSort ul li, .popappsSort ul li {
+		width: 50%;
+		float: left;
+	}
+	
+	.appThumb {				
+		width: 50%;
+	}
+
+	.popappsSection {
+		height: 2100px;
+	}
+
+	.appContainer {
+		margin: 0 auto;
+	}
+
+	.popappsSection {
+		height: 3900px;
+	}
+
+}
+
+
+@media only screen and (max-width: 569px)  {
+
+
+	.newappsSort ul li, .popappsSort ul li {
+		width: 100%;
+		float: left;
+	}
+
+	h1 {
+		font-size: 23px;
+	}
+
+	.appThumb {				
+		width: 100%;
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 400px) {
+	.popappsSection {
+		height: 2400px;
+	}
+}

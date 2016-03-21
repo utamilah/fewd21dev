@@ -7,6 +7,8 @@ $(document).ready(function(e){
 	$(".nav").sticky({topSpacing:0});
 
 	$.scrollIt();
+
+	$("#colorbox").colorbox({maxWidth:'95%', maxHeight:'95%'});
 	
 });
 
