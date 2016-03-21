@@ -8,6 +8,7 @@
 <!--style sheets-->
 <link rel="stylesheet" href="css/normalize.css" media="screen" type="text/css"/>
 <link rel="stylesheet" href="css/colorbox.css" media="screen" type="text/css"/>
+<link rel="stylesheet" href="css/animate.css" media="screen" type="text/css"/>
 <link rel="stylesheet" href="css/styles.css" media="screen" type="text/css"/>
 
 <!--fonts-->
@@ -26,7 +27,7 @@
 				<h1>The Mobile App Depot</h1>
 				<p>Learn about the world’s most popular apps—and maybe discover some new ones!</p>
 				<div class="downArrow">
-					<i class="fa fa-angle-down"></i>
+					<a href="#" data-scroll-nav="0"><i class="fa fa-angle-down animated bounce"></i></a>
 				</div>
 			</div>
 		</div>
@@ -37,97 +38,118 @@
 <!--Sticky Site Navigation-->
 <nav class="nav">
 	<ul>
-		<li><a href="#">POPULAR APPS</a></li>
-		<li><a href="#">MOBILE APP HEROES</a></li>
-		<li><a href="#">STATISTICS</a></li>
-		<li><a href="#">ENJOY THESE</a></li>
+		<li><a href="#" data-scroll-nav="0">POPULAR APPS</a></li>
+		<li><a href="#" data-scroll-nav="1">MOBILE APP HEROES</a></li>
+		<li><a href="#" data-scroll-nav="2">STATISTICS</a></li>
+		<li><a href="#" data-scroll-nav="3">ENJOY THESE</a></li>
 	</ul>
 </nav>
 <!--Sticky Site Navigation END-->
 
 <!--Popular Apps-->
-<section class="popappsSection">
+<section class="popappsSection" data-scroll-index="0">
 <!--Mix it Up Plugin Apps-->
 <div class="container">
 	<h1>Popular Apps</h1>
 	<section class="popappsSort">
 		<ul class="row">
-			<li class="orange"><div class="inner">ALL</div></li>
-			<li class="blue"><div class="inner">SOCIAL</div></li>
-			<li class="red"><div class="inner">GAMES</div></li>
-			<li class="green"><div class="inner">MISC</div></li>
+			
+				<li class="orange">
+					<div class="filter" data-filter="all">
+						<div class="inner">ALL</div>
+					</div>
+				</li>
+					
+				<li class="blue">
+					<div class="filter" data-filter=".social-cate">
+						<div class="inner">SOCIAL</div>
+					</div>
+				</li>
+			
+
+				<li class="red">
+					<div class="filter" data-filter=".games-cate">
+						<div class="inner">GAMES</div>
+					</div>
+				</li>
+
+				<li class="green">
+					<div class="filter" data-filter=".misc-cate">
+						<div class="inner">MISC</div>
+					</div>
+				</li>
 		</ul>
 
 			<div class="clearfix appContainer">
 				<!--include a light box element w/ text and image-->
 				<div class="row">
-					<div class="appThumb">
+					<div class="appThumb mix social-cate">
 						<div class="inner">
 							<a class="inline" href="#inline_fb"><img src="img/popapps/facebook.png" alt="facebook"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix social-cate">
 						<div class="inner">
 							<a class="inline" href="#inline_insta"><img src="img/popapps/instagram.png" alt="instagram"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix games-cate">
 						<div class="inner">
 							<a class="inline" href="#inline_mine"><img src="img/popapps/minecraft.png" alt="minecraft"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix misc-cate">
 						<div class="inner">
 							<a class="inline" href="#inline_netflix"><img src="img/popapps/netflix.png" alt="netflix"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix games-cate">
 						<div class="inner">
 							<a class="inline" href="#inline_quiz"><img src="img/popapps/quizup.png" alt="quiz up"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix social-cate">
 						<div class="inner">
 							<a class="inline" href="#inline_snap"><img src="img/popapps/snapchat.png" alt="snapchat"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix misc-cate">
 						<div class="inner">
 							<a class="inline" href="#inline_sound"><img src="img/popapps/soundcloud.png" alt="soundcloud"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix misc-cate">
 						<div class="inner">
 							<a class="inline" href="#inline_spot"><img src="img/popapps/spotify.png" alt="spotify"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix social-cate">
 						<div class="inner">
 							<a class="inline" href="#inline_twitter"><img src="img/popapps/twitter.png" alt="twitter"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix games-cate">
 						<div class="inner">
 							<a class="inline" href="#inline_dots"><img src="img/popapps/twodots.png" alt="two dots"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix misc-cate">
 						<div class="inner">
 							<a class="inline" href="#inline_vine"><img src="img/popapps/vine.png" alt="vine"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix misc-cate">
 						<div class="inner">
 							<a class="inline" href="#inline_yt"><img src="img/popapps/youtube.png" alt="youtube"></a>
 						</div>
@@ -157,7 +179,7 @@
 <!--Popular Apps END-->
 
 <!--App Heroes-->
-<section class="appHeroes">
+<section class="appHeroes" data-scroll-index="1">
 	<div class="container">
 		<div class="appHeroOne clearfix">
 			<h1>Mobile App Heroes</h1>
@@ -170,7 +192,7 @@
 		</div>
 
 		<div class="appHeroTwo clearfix">
-			<img src="img/googlechrome.png" alt="">
+			<img src="img/googlechrome.png" alt="google chrome">
 			<div class="wrapper">
 				<h2>Google Chrome Browser</h2>
 				<span>#1 Most Downloaded App of All Time (List 25 – 2015)</span>
@@ -183,7 +205,7 @@
 <!--App Heroes END-->
 
 <!--The Numbers-->
-<section class="stats">
+<section class="stats" data-scroll-index="2">
 	<div class="container">
 		<div class="wrapper">
 			<h1>STATISTICS</h1>
@@ -195,28 +217,28 @@
 				<div class="statBox orange">
 					<div class="inner">
 						<h2>Google Play</h2>
-						<p class="count">1,600,000</p>
+						<p id ="number1" class="count">0</p>
 					</div>
 				</div>
 
 				<div class="statBox blue">
 					<div class="inner">					
 						<h2>Apple Store</h2>
-						<p class="count">1,500,000</p>
+						<p id ="number2" class="count">0</p>
 					</div>
 				</div>
 
 				<div class="statBox red">
 					<div class="inner">	
 						<h2>Amazon Appstore</h2>
-						<p class="count">400,000</p>
+						<p id ="number3" class="count">0</p>
 					</div>
 				</div>
 
 				<div class="statBox green">
 					<div class="inner">	
 						<h2>Windows Phone Store</h2>
-						<p class="count">340,000</p>
+						<p id ="number4" class="count">0</p>
 					</div>
 				</div>
 			</div><!--end row-->
@@ -226,89 +248,110 @@
 <!--The Numbers END-->
 
 <!--Apps To Enjoy-->
-<section class="enjoyThese">
+<section class="enjoyThese" data-scroll-index="3">
 	<div class="container">
 		<section class="newappsSort">
 			<h1>Apps to Enjoy</h1>
 			<ul class="row">
-				<li class="orange"><div class="inner">ALL</div></li>
-				<li class="blue"><div class="inner">SOCIAL</div></li>
-				<li class="red"><div class="inner">GAMES</div></li>
-				<li class="green"><div class="inner">MISC</div></li>
-			</ul>
+			
+				<li class="orange">
+					<div class="filter" data-filter="all">
+						<div class="inner">ALL</div>
+					</div>
+				</li>
+					
+				<li class="blue">
+					<div class="filter" data-filter=".social-cate">
+						<div class="inner" >SOCIAL</div>
+					</div>
+				</li>
+			
 
-			<div class="appContainer clearfix">
+				<li class="red">
+					<div class="filter" data-filter=".games-cate">
+						<div class="inner">GAMES</div>
+					</div>
+				</li>
+
+				<li class="green">
+					<div class="filter" data-filter=".misc-cate">
+						<div class="inner">MISC</div>
+					</div>
+				</li>
+		</ul>
+
+			<div class="clearfix appContainer">
 				<!--include a light box element w/ text and image-->
 				<div class="row">
-					<div class="appThumb">
+					<div class="appThumb mix games-cate">
 						<div class="inner">
-							<a href="#"><img src="img/newapps/doesnotcommute.png" alt="does not commute"></a>
+							<a class="inline" href="#inline_commute"><img src="img/newapps/doesnotcommute.png" alt="does not commute"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix misc-cate">
 						<div class="inner">
-							<a href="#"><img src="img/newapps/fabulous.png" alt="fabulous"></a>
+							<a class="inline" href="#inline_fabulous"><img src="img/newapps/fabulous.png" alt="fabulous"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix misc-cate">
 						<div class="inner">
-							<a href="#"><img src="img/newapps/flipboard.png" alt="flipboard"></a>
+							<a class="inline" href="#inline_flipboard"><img src="img/newapps/flipboard.png" alt="flipboard"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix misc-cate">
 						<div class="inner">
-							<a href="#"><img src="img/newapps/headspace.png" alt="headspace"></a>
+							<a class="inline" href="#inline_headspace"><img src="img/newapps/headspace.png" alt="headspace"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix social-cate game-cate">
 						<div class="inner">
-							<a href="msqrd"><img src="img/newapps/msqrd.png" alt="#"></a>
+							<a class="inline" href="#inline_msqrd"><img src="img/newapps/msqrd.png" alt="#"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix games-cate">
 						<div class="inner">
-							<a href="#"><img src="img/newapps/pathtoluma.png" alt="path to luma"></a>
+							<a class="inline" href="#inline_pathtoluma"><img src="img/newapps/pathtoluma.png" alt="path to luma"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix social-cate">
 						<div class="inner">
-							<a href="#"><img src="img/newapps/periscope.png" alt="periscope"></a>
+							<a class="inline" href="#inline_periscope"><img src="img/newapps/periscope.png" alt="periscope"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix social-cate">
 						<div class="inner">
-							<a href="#"><img src="img/newapps/phhhoto.png" alt="photo"></a>
+							<a class="inline" href="#inline_phhhoto"><img src="img/newapps/phhhoto.png" alt="photo"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix games-cate">
 						<div class="inner">
-							<a href="#"><img src="img/newapps/plantnanny.png" alt="plant nanny"></a>
+							<a class="inline" href="#inline_plantnanny"><img src="img/newapps/plantnanny.png" alt="plant nanny"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix games-cate">
 						<div class="inner">
-							<a href="#"><img src="img/newapps/smashhit.png" alt="smash hit"></a>
+							<a class="inline" href="#inline_smashhit"><img src="img/newapps/smashhit.png" alt="smash hit"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix games-cate">
 						<div class="inner">
-							<a href="#"><img src="img/newapps/stack.png" alt="stack"></a>
+							<a class="inline" href="#inline_stack"><img src="img/newapps/stack.png" alt="stack"></a>
 						</div>
 					</div>
 
-					<div class="appThumb">
+					<div class="appThumb mix misc-cate">
 						<div class="inner">
-							<a href="vsco"><img src="img/newapps/vsco.png" alt="#"></a>
+							<a class="inline" href="#inline_vsco"><img src="img/newapps/vsco.png" alt="#"></a>
 						</div>
 					</div>
 				</div>
@@ -320,6 +363,7 @@
 
 <!-- This contains the hidden content for inline calls -->
 <section class="colorBoxHidden">
+	<!--Popular Apps Inline HTML-->
 	<section class="inline_content" id="inline_fb">
 			<div class="image"><img src="img/popapps/facebook.png" alt="facebook"></div>
 			<div class="inline-copy">
@@ -339,7 +383,7 @@
 		<section class="inline_content" id="inline_mine">
 			<div class="image"><img src="img/popapps/minecraft.png" alt="minecraft"></div>
 			<div class="inline-copy">
-				<h1>Instagram</h1>
+				<h1>Minecraft</h1>
 				<p>The best app to show off your megapixels and delicious food</p>
 			</div>
 		</section>
@@ -347,7 +391,7 @@
 		<section class="inline_content" id="inline_netflix">
 			<div class="image"><img src="img/popapps/netflix.png" alt="netflix"></div>
 			<div class="inline-copy">
-				<h1>Instagram</h1>
+				<h1>Netflix</h1>
 				<p>The best app to show off your megapixels and delicious food</p>
 			</div>
 		</section>
@@ -355,7 +399,7 @@
 		<section class="inline_content" id="inline_quiz">
 			<div class="image"><img src="img/popapps/quizup.png" alt="quizup"></div>
 			<div class="inline-copy">
-				<h1>Instagram</h1>
+				<h1>Quiz Up</h1>
 				<p>The best app to show off your megapixels and delicious food</p>
 			</div>
 		</section>
@@ -363,7 +407,7 @@
 		<section class="inline_content" id="inline_snap">
 			<div class="image"><img src="img/popapps/snapchat.png" alt="snapchat"></div>
 			<div class="inline-copy">
-				<h1>Instagram</h1>
+				<h1>Snapchat</h1>
 				<p>The best app to show off your megapixels and delicious food</p>
 			</div>
 		</section>
@@ -371,7 +415,7 @@
 		<section class="inline_content" id="inline_sound">
 			<div class="image"><img src="img/popapps/soundcloud.png" alt="soundcloud"></div>
 			<div class="inline-copy">
-				<h1>Instagram</h1>
+				<h1>Soundcloud</h1>
 				<p>The best app to show off your megapixels and delicious food</p>
 			</div>
 		</section>
@@ -379,7 +423,7 @@
 		<section class="inline_content" id="inline_spot">
 			<div class="image"><img src="img/popapps/spotify.png" alt="spotify"></div>
 			<div class="inline-copy">
-				<h1>Instagram</h1>
+				<h1>Spotify</h1>
 				<p>The best app to show off your megapixels and delicious food</p>
 			</div>
 		</section>
@@ -387,7 +431,7 @@
 		<section class="inline_content" id="inline_twitter">
 			<div class="image"><img src="img/popapps/twitter.png" alt="twitter"></div>
 			<div class="inline-copy">
-				<h1>Instagram</h1>
+				<h1>Twitter</h1>
 				<p>The best app to show off your megapixels and delicious food</p>
 			</div>
 		</section>
@@ -395,7 +439,7 @@
 		<section class="inline_content" id="inline_dots">
 			<div class="image"><img src="img/popapps/twodots.png" alt="twodots"></div>
 			<div class="inline-copy">
-				<h1>Instagram</h1>
+				<h1>Two Dots</h1>
 				<p>The best app to show off your megapixels and delicious food</p>
 			</div>
 		</section>
@@ -403,7 +447,7 @@
 		<section class="inline_content" id="inline_vine">
 			<div class="image"><img src="img/popapps/vine.png" alt="vine"></div>
 			<div class="inline-copy">
-				<h1>Instagram</h1>
+				<h1>Vine</h1>
 				<p>The best app to show off your megapixels and delicious food</p>
 			</div>
 		</section>
@@ -411,11 +455,112 @@
 		<section class="inline_content" id="inline_yt">
 			<div class="image"><img src="img/popapps/youtube.png" alt="youtube"></div>
 			<div class="inline-copy">
-				<h1>Instagram</h1>
+				<h1>Youtube</h1>
 				<p>The best app to show off your megapixels and delicious food</p>
 			</div>
 		</section>
+
+
+		<!--Popular Apps Inline HTML-->
+
+		<section class="inline_content" id="inline_commute">
+			<div class="image"><img src="img/newapps/doesnotcommute.png" alt="doesnotcommute"></div>
+			<div class="inline-copy">
+				<h1>Does Not Commute</h1>
+				<p>Facebook's mobile app allows users to connect on the go!</p>
+			</div>
+		</section>
+
+		<section class="inline_content" id="inline_fabulous">
+			<div class="image"><img src="img/newapps/fabulous.png" alt="fabulous"></div>
+			<div class="inline-copy">
+				<h1>Fabulous</h1>
+				<p>The best app to show off your megapixels and delicious food</p>
+			</div>
+		</section>
+
+		<section class="inline_content" id="inline_flipboard">
+			<div class="image"><img src="img/newapps/flipboard.png" alt="flipboard"></div>
+			<div class="inline-copy">
+				<h1>Flipboard</h1>
+				<p>The best app to show off your megapixels and delicious food</p>
+			</div>
+		</section>
+
+		<section class="inline_content" id="inline_headspace">
+			<div class="image"><img src="img/newapps/headspace.png" alt="headspace"></div>
+			<div class="inline-copy">
+				<h1>Headspace</h1>
+				<p>The best app to show off your megapixels and delicious food</p>
+			</div>
+		</section>
+
+		<section class="inline_content" id="inline_msqrd">
+			<div class="image"><img src="img/newapps/msqrd.png" alt="msqrd"></div>
+			<div class="inline-copy">
+				<h1>MSQRD</h1>
+				<p>The best app to show off your megapixels and delicious food</p>
+			</div>
+		</section>
+
+		<section class="inline_content" id="inline_pathtoluma">
+			<div class="image"><img src="img/newapps/pathtoluma.png" alt="pathtoluma"></div>
+			<div class="inline-copy">
+				<h1>Path to Luma</h1>
+				<p>The best app to show off your megapixels and delicious food</p>
+			</div>
+		</section>
+
+		<section class="inline_content" id="inline_periscope">
+			<div class="image"><img src="img/newapps/periscope.png" alt="periscope"></div>
+			<div class="inline-copy">
+				<h1>Periscope</h1>
+				<p>The best app to show off your megapixels and delicious food</p>
+			</div>
+		</section>
+
+		<section class="inline_content" id="inline_phhhoto">
+			<div class="image"><img src="img/newapps/phhhoto.png" alt="phhhoto"></div>
+			<div class="inline-copy">
+				<h1>Phhhoto</h1>
+				<p>The best app to show off your megapixels and delicious food</p>
+			</div>
+		</section>
+
+		<section class="inline_content" id="inline_plantnanny">
+			<div class="image"><img src="img/newapps/plantnanny.png" alt="plantnanny"></div>
+			<div class="inline-copy">
+				<h1>Plant Nanny</h1>
+				<p>The best app to show off your megapixels and delicious food</p>
+			</div>
+		</section>
+
+		<section class="inline_content" id="inline_smashhit">
+			<div class="image"><img src="img/newapps/smashhit.png" alt="smashhit"></div>
+			<div class="inline-copy">
+				<h1>Smash Hit</h1>
+				<p>The best app to show off your megapixels and delicious food</p>
+			</div>
+		</section>
+
+		<section class="inline_content" id="inline_stack">
+			<div class="image"><img src="img/newapps/stack.png" alt="stack"></div>
+			<div class="inline-copy">
+				<h1>Stack</h1>
+				<p>The best app to show off your megapixels and delicious food</p>
+			</div>
+		</section>
+
+		<section class="inline_content" id="inline_vsco">
+			<div class="image"><img src="img/newapps/vsco.png" alt="vsco"></div>
+			<div class="inline-copy">
+				<h1>VSCO</h1>
+				<p>The best app to show off your megapixels and delicious food</p>
+			</div>
+		</section>
+
 </section>
+
 <!-- This contains the hidden content for inline calls END -->
 
 <!--footer-->
@@ -435,7 +580,12 @@
 <!--footer END-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
 <script src="js/jquery.colorbox-min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollIt.min.js" type="text/javascript"></script>
 <script src="js/index.js"></script>
 
 </body>
