@@ -572,7 +572,18 @@ footer {
 
 }
 
+@media only screen and (max-width: 720px) {
+	.nav li a {
+		display: none;
+	}
+
+}
+
 @media only screen and (max-width: 690px)  {
+
+	.appHeroes h2 {
+	    font-size: 24px;
+	}
 
 	.newappsSort ul li, .popappsSort ul li {
 		width: 50%;
@@ -583,23 +594,17 @@ footer {
 		width: 50%;
 	}
 
-	.popappsSection {
-		height: 2100px;
-	}
-
 	.appContainer {
 		margin: 0 auto;
 	}
 
 	.popappsSection {
-		height: 3900px;
+		height: 2100px;
 	}
 
 }
 
-
 @media only screen and (max-width: 569px)  {
-
 
 	.newappsSort ul li, .popappsSort ul li {
 		width: 100%;
@@ -613,13 +618,103 @@ footer {
 	.appThumb {				
 		width: 100%;
 	}
+
+	.popappsSection {
+		height: 4000px;
+	}
 	
 }
 
+@media only screen and (max-width: 540px) {
 
+	.ipad{
+		height: 500px;
+		max-width: 389.2px;
+	}
+
+	.ipad .inner h1 {
+		    font-size: 45px;
+		    line-height: 50px;
+		}
+
+	.ipad .inner p {
+			font-size: 16px;
+		}
+
+	.downArrow {
+		margin-top: 40px;
+	}
+
+}
+
+@media only screen and (max-width: 490px) {
+	.ipad{
+		height: 407.21px;
+		max-width: 316.97px;
+	}
+
+	.ipad .inner h1 {
+	    font-size: 35px;
+	    line-height: 45px;
+	    padding-top: 50px;
+    	padding-left: 60px;
+	}
+
+	.ipad .inner p {
+		font-size: 12px;
+		padding-top: 20px;
+    	padding-left: 60px;
+    	padding-right: 50px;
+	}
+
+	.downArrow {
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.ipad{
+		height: 375.09px;
+		max-width: 291.97px;
+	}
+
+	.downArrow {
+		margin-top: 20px;
+		font-size: 40px;
+	}
+
+}
 
 @media only screen and (max-width: 400px) {
 	.popappsSection {
-		height: 2400px;
+		height: 4000px;
+	}
+
+	.ipad{
+		height: 350px;
+		max-width: 272.44px;
+	}
+
+	.ipad .inner h1 {
+	    font-size: 30px;
+	    line-height: 35px;
+	    padding-top: 45px;
+    	padding-left: 60px;
+    	padding-bottom: 0;
+    	margin-right: 60px;
+	}
+
+	.ipad .inner p {
+		font-size: 12px;
+		padding-top: 20px;
+    	padding-left: 60px;
+    	padding-right: 45px;	
+    	padding-bottom: 0;
+    	margin-right: 0;
+	}
+
+	.downArrow {
+		margin-top: 25px;
+		font-size: 40px;
 	}
 }

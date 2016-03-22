@@ -12,6 +12,7 @@ $(document).ready(function(e){
 	
 });
 
+
 var waypoints = $('.stats').waypoint({
   handler: function(direction) {
     console.log('reached')
