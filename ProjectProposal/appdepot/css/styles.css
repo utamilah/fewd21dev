@@ -84,6 +84,9 @@ h1 {
 			font-size: 70px;
 			text-align: center;
 			margin-top: 30px;
+			-vendor-animation-duration: 3s;
+			-vendor-animation-delay: 2s;
+			-vendor-animation-iteration-count: infinite;
 		}
 
 		.downArrow a {
@@ -421,6 +424,10 @@ h1 {
 	width: 500px;
 	padding: 10px;
 }
+
+	.image img {
+		width: 186px;
+	}
 
 .image {
 	width: 50%;

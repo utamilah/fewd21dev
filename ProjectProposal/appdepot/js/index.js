@@ -7,6 +7,8 @@ $(document).ready(function(e){
 	$(".nav").sticky({topSpacing:0});
 
 	$.scrollIt();
+
+	$('.downArrow').addClass('animated bounce');
 	
 });
 
