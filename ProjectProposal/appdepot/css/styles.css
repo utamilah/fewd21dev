@@ -110,15 +110,26 @@ h1 {
 		font-size: 18px;
 	}
 
-.nav {
+.navigation {
 	background: #5D658D;
 	text-align: center;
 	z-index: 1000;
 }
 
+.navigation .toggle-menu {
+	display: none;
+}
+
+.nav {
+	background: #5D658D;
+}
+
 	.nav ul li {
-		display: inline-block;
 		padding: 25px;
+		position: relative;
+		display: inline-block;
+		list-style: none;
+		cursor: default;
 	}
 
 	.nav ul li a {
@@ -140,6 +151,12 @@ h1 {
 	padding-bottom: 10px;
 }
 
+.popappsSection p, .enjoyThese p {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+
 .popappsSection h1:after {
 	content: "";
 	display: block;
@@ -153,6 +170,7 @@ h1 {
 .popappsSort {
 	max-width: 785px;
 	margin: 0 auto;
+	cursor: pointer;
 }
 
 .popappsSort ul li {
@@ -395,6 +413,7 @@ h1 {
 	.newappsSort {
 		max-width: 785px;
 		margin: 0 auto;
+		cursor: pointer;
 	}
 
 	.newappsSort ul li {
@@ -494,11 +513,11 @@ h1 {
 
 /*// Mix it Up//*/
 
-.appContainer .mix{
+.popfilter .mix{
 	display: none;
 }
 
-.appContainer2 .mix{
+.newfilter .mix{
 	display: none;
 }
 
@@ -580,10 +599,18 @@ footer {
 }
 
 @media only screen and (max-width: 720px) {
-	.nav li a {
+	.nav ul li a {
 		display: none;
 	}
 
+	.navigation .toggle-menu {
+		display: block;
+	}
+
+		.nav .toggle-menu a {
+			color: white;
+			text-decoration: none;
+		}
 }
 
 @media only screen and (max-width: 690px)  {

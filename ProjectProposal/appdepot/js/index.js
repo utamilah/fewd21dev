@@ -2,9 +2,12 @@ $(document).ready(function(e){
 	//Examples of how to assign the Colorbox event to elements			
 	$(".inline").colorbox({inline:true});
 
-	$('.appContainer').mixItUp();
+	$('.popfilter').mixItUp();
+
+	$('.newfilter').mixItUp();
 
 	$(".nav").sticky({topSpacing:0});
+	$(".navigation").sticky({topSpacing:0});
 
 	$.scrollIt();
 
