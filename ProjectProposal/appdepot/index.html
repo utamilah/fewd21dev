@@ -10,7 +10,6 @@
 <link rel="stylesheet" href="css/normalize.css" media="screen" type="text/css"/>
 <link rel="stylesheet" href="css/colorbox.css" media="screen" type="text/css"/>
 <link rel="stylesheet" href="css/animate.css" media="screen" type="text/css"/>
-<link rel="stylesheet" href="css/responsive-nav.css">
 <link rel="stylesheet" href="css/styles.css" media="screen" type="text/css"/>
 
 <!--fonts-->
@@ -21,15 +20,33 @@
 
 <body>
 
+<!--Sticky Site Navigation-->
+<div id="menu-toggle" class="push">
+	<a href="#menu" class="menu-link">&#9776;</a>
+</div>
+
+<div id="menu" class="panel" role="navigation">
+	<nav class="nav">
+		<ul>
+			<li><a href="#" data-scroll-nav="0">INTRO</a></li>
+			<li><a href="#" data-scroll-nav="1">POPULAR APPS</a></li>
+			<li><a href="#" data-scroll-nav="2">MOBILE APP HEROES</a></li>
+			<li><a href="#" data-scroll-nav="3">STATISTICS</a></li>
+			<li><a href="#" data-scroll-nav="4">ENJOY THESE</a></li>
+		</ul>
+	</nav>
+</div>
+<!--Sticky Site Navigation END-->
+
 <!--Hero Section-->
-<section class="hero">
+<section class="hero" data-scroll-index="0">
 	<div class="container">
 		<div class="ipad">
 			<div class="inner">
 				<h1>The Mobile App Depot</h1>
 				<p>Learn about the world’s most popular apps—and maybe discover some new ones!</p>
 				<div class="downArrow">
-					<a href="#" data-scroll-nav="0"><i class="fa fa-angle-down"></i></a>
+					<a href="#" data-scroll-nav="1"><i class="fa fa-angle-down"></i></a>
 				</div>
 			</div>
 		</div>
@@ -37,27 +54,13 @@
 </section>
 <!--Hero Section END-->
 
-<!--Sticky Site Navigation-->
-<div class="navigation">
-<div class="toggle-menu"><a href="#">&equiv;</a></div>
-	<nav class="nav">
-		<ul>
-			<li><a href="#" data-scroll-nav="0">POPULAR APPS</a></li>
-			<li><a href="#" data-scroll-nav="1">MOBILE APP HEROES</a></li>
-			<li><a href="#" data-scroll-nav="2">STATISTICS</a></li>
-			<li><a href="#" data-scroll-nav="3">ENJOY THESE</a></li>
-		</ul>
-	</nav>
-</div>
-<!--Sticky Site Navigation END-->
-
 <!--Popular Apps-->
-<section class="popappsSection" data-scroll-index="0">
+<section class="clearfix popappsSection" data-scroll-index="1">
 <!--Mix it Up Plugin Apps-->
 <div class="container">
-	<h1>Popular Apps</h1>
-	<p>Filter through the categories and click on an app thumbnail to learn more! <span>(All links go to the Google Play Store)</span></p>
 	<section class="popappsSort">
+		<h1>Popular Apps</h1>
+		<p>Filter through the categories and click on an app thumbnail to learn more! <span>(All links go to the Google Play Store)</span></p>
 		<ul class="row">
 			
 				<li class="orange">
@@ -86,7 +89,7 @@
 				</li>
 		</ul>
 
-			<div class="clearfix appContainer popfilter">
+			<div class="clearfix appContainer">
 				<!--include a light box element w/ text and image-->
 				<div class="row">
 					<div class="appThumb mix social-cate">
@@ -167,14 +170,14 @@
 			<section class="additionals">
 				<h2>Additional Categories</h2>
 				<ul class="row">
-					<li class="blue"><div class="inner"><a href="https://play.google.com/store/apps/category/PRODUCTIVITY?hl=en">Productivity</a></div></li>
-					<li class="green"><div class="inner"><a href="https://play.google.com/store/apps/category/HEALTH_AND_FITNESS?hl=en">Health &amp; Fitness</a></div></li>
-					<li class="red"><div class="inner"><a href="https://play.google.com/store/apps/category/EDUCATION?hl=en">Education</a></div></li>
-					<li class="orange"><div class="inner"><a href="https://play.google.com/store/apps/category/FINANCE?hl=en">Finance</a></div></li>
-					<li class="red"><div class="inner"><a href="https://play.google.com/store/apps/category/GAME_SPORTS?hl=en">Sports</a></div></li>
-					<li class="orange"><div class="inner"><a href="https://play.google.com/store/apps/category/PHOTOGRAPHY?hl=en">Photography</a></div></li>
-					<li class="blue"><div class="inner"><a href="https://play.google.com/store/apps/category/TRAVEL_AND_LOCAL?hl=en">Travel</a></div></li>
-					<li class="green"><div class="inner"><a href="https://play.google.com/store/search?q=navigation&c=apps&hl=en">Navigation</a></div></li>
+					<li class="blue"><div class="inner"><a href="https://play.google.com/store/apps/category/PRODUCTIVITY?hl=en" target="_blank">Productivity</a></div></li>
+					<li class="green"><div class="inner"><a href="https://play.google.com/store/apps/category/HEALTH_AND_FITNESS?hl=en" target="_blank">Health &amp; Fitness</a></div></li>
+					<li class="red"><div class="inner"><a href="https://play.google.com/store/apps/category/EDUCATION?hl=en" target="_blank">Education</a></div></li>
+					<li class="orange"><div class="inner"><a href="https://play.google.com/store/apps/category/FINANCE?hl=en" target="_blank">Finance</a></div></li>
+					<li class="red"><div class="inner"><a href="https://play.google.com/store/apps/category/GAME_SPORTS?hl=en" target="_blank">Sports</a></div></li>
+					<li class="orange"><div class="inner"><a href="https://play.google.com/store/apps/category/PHOTOGRAPHY?hl=en" target="_blank">Photography</a></div></li>
+					<li class="blue"><div class="inner"><a href="https://play.google.com/store/apps/category/TRAVEL_AND_LOCAL?hl=en" target="_blank">Travel</a></div></li>
+					<li class="green"><div class="inner"><a href="https://play.google.com/store/search?q=navigation&c=apps&hl=en" target="_blank">Navigation</a></div></li>
 				</ul>
 			</section>
 
@@ -185,7 +188,7 @@
 <!--Popular Apps END-->
 
 <!--App Heroes-->
-<section class="appHeroes" data-scroll-index="1">
+<section class="appHeroes" data-scroll-index="2">
 	<div class="container clearfix">
 			<h1>Mobile App Heroes</h1>
 			<img src="img/clashroyale.png" alt="clash royale">
@@ -209,7 +212,7 @@
 <!--App Heroes END-->
 
 <!--The Numbers-->
-<section class="stats" data-scroll-index="2">
+<section class="stats" data-scroll-index="3">
 	<div class="container">
 		<div class="wrapper">
 			<h1>STATISTICS</h1>
@@ -252,7 +255,7 @@
 <!--The Numbers END-->
 
 <!--Apps To Enjoy-->
-<section class="enjoyThese" data-scroll-index="3">
+<section class="clearfix enjoyThese" data-scroll-index="4">
 	<div class="container">
 		<section class="newappsSort">
 			<h1>Apps to Enjoy</h1>
@@ -285,7 +288,7 @@
 				</li>
 		</ul>
 
-			<div class="clearfix appContainer newfilter">
+			<div class="clearfix appContainer">
 				<!--include a light box element w/ text and image-->
 				<div class="row">
 					<div class="appThumb mix games-cate">
@@ -373,7 +376,8 @@
 			<div class="image"><img src="img/popapps/facebook.png" alt="facebook"></div>
 			<div class="inline-copy">
 				<h1>Facebook</h1>
-				<p>Facebook's mobile app allows users to connect on the go!</p>
+				<p>Facebook's mobile app allows users to connect on the go! See what your friends are up to away from your computer.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -382,6 +386,8 @@
 			<div class="inline-copy">
 				<h1>Instagram</h1>
 				<p>The best app to show off your megapixels and delicious food</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=en" target="_blank"><span>Download here</span></a></p>
+
 			</div>
 		</section>
 
@@ -390,6 +396,7 @@
 			<div class="inline-copy">
 				<h1>Minecraft</h1>
 				<p>Skeletons, Creepers, and Endermen, oh my! Mine for tools to help you survive in this pixelated, virtual world.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.mojang.minecraftpe&hl=en" target="_blank"><span>Download here</span></a></p>			
 			</div>
 		</section>
 
@@ -398,6 +405,7 @@
 			<div class="inline-copy">
 				<h1>Netflix</h1>
 				<p>TV on the go! Netflix has a beautiful mobile app that allows you watch TV where ever you are.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.netflix.mediaclient&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -406,6 +414,7 @@
 			<div class="inline-copy">
 				<h1>Quiz Up</h1>
 				<p>Think you know everything and want to prove it? Pick from hundreds of trivia categories and battle against other know-it-alls!</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.quizup.core&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -414,6 +423,7 @@
 			<div class="inline-copy">
 				<h1>Snapchat</h1>
 				<p>A way to create memories... and forget them after up to 10 seconds</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.snapchat.android&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -422,6 +432,7 @@
 			<div class="inline-copy">
 				<h1>Soundcloud</h1>
 				<p>Free music always sounds good. Soundcloud on the go can keep you up to date on the latest tunes.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.soundcloud.android&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -430,6 +441,7 @@
 			<div class="inline-copy">
 				<h1>Spotify</h1>
 				<p>Spotify's mobile app has options that are unique to the mobile interface. Useful for maximizing your listening pleasure.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.spotify.music&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -438,14 +450,16 @@
 			<div class="inline-copy">
 				<h1>Twitter</h1>
 				<p>Twitter on mobile has a unique interface and also provides alerts while you're on the go.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.twitter.android&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
 		<section class="inline_content" id="inline_dots">
-			<div class="image"><img src="http://lh3.googleusercontent.com/TksDVySy3_UbewtqhaPMzYUtaByjwQ_JvHRPi0e8DuTQ5nkuEHFYWsqgm_Z2OmoPhbs=w300-rw" alt="twodots"></div>
+			<div class="image"><img src="img/popapps/twodots.png" alt="twodots"></div>
 			<div class="inline-copy">
 				<h1>Two Dots</h1>
 				<p>When playing this mobile game, remember that squares are your friend.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.weplaydots.twodotsandroid&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -454,6 +468,7 @@
 			<div class="inline-copy">
 				<h1>Vine</h1>
 				<p>It's like twitter, but for videos. Be creative!</p>
+				<p><a href="https://play.google.com/store/search?q=vine&c=apps&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -462,6 +477,7 @@
 			<div class="inline-copy">
 				<h1>Youtube</h1>
 				<p>Good ol' youtube. Makes mobile video-watching an absolute joy.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -473,6 +489,7 @@
 			<div class="inline-copy">
 				<h1>Does Not Commute</h1>
 				<p>This game is fun because the bad guy is you.</p>
+				<p><a href="https://play.google.com/store/search?q=does%20not%20commute&c=apps&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -481,6 +498,7 @@
 			<div class="inline-copy">
 				<h1>Fabulous</h1>
 				<p>An inspirational mobile app that helps you become a better you... if possible!</p>
+				<p><a href="https://play.google.com/store/apps/details?id=co.thefabulous.app&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -489,6 +507,7 @@
 			<div class="inline-copy">
 				<h1>Flipboard</h1>
 				<p>A unique way to look at the news. If you enjoy apps with fun interfaces as well as current events, Flipboard is for you!</p>
+				<p><a href="https://play.google.com/store/search?q=flipboard&c=apps&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -496,7 +515,8 @@
 			<div class="image"><img src="img/newapps/headspace.png" alt="headspace"></div>
 			<div class="inline-copy">
 				<h1>Headspace</h1>
-				<p>Emma Watson said this said it's "kinda genius" so just go check it out.</p>
+				<p>First of all, Emma Watson said this said it's "kinda genius" so just go check it out.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.getsomeheadspace.android&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -505,6 +525,7 @@
 			<div class="inline-copy">
 				<h1>MSQRD</h1>
 				<p>Change your face and share the results with friends!</p>
+				<p><a href="https://play.google.com/store/apps/details?id=me.msqrd.android&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -513,6 +534,7 @@
 			<div class="inline-copy">
 				<h1>Path to Luma</h1>
 				<p>A free adventure/puzzle game. Play as SAM and go on a mission to save the galaxy!</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.NRG.PathToLuma&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -521,6 +543,7 @@
 			<div class="inline-copy">
 				<h1>Periscope</h1>
 				<p>Twitter has offered a way to watch and broadcast live videos through your twitter account.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=tv.periscope.android&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -529,6 +552,7 @@
 			<div class="inline-copy">
 				<h1>Phhhoto</h1>
 				<p>Make funny (or serious if you prefer!) moving photos right on your phone. Fun if you love Instagram!</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.phhhoto.android&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -537,6 +561,7 @@
 			<div class="inline-copy">
 				<h1>Plant Nanny</h1>
 				<p>Plant Nanny is a fun way to remind yourself that you really need to drink more water.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.fourdesire.plantnanny&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -545,6 +570,7 @@
 			<div class="inline-copy">
 				<h1>Smash Hit</h1>
 				<p>Zoom through an virtual world and smash glass panels with metal marbles. If you run into the glass you'll lose your marbles!</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.mediocre.smashhit&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -552,7 +578,8 @@
 			<div class="image"><img src="img/newapps/stack.png" alt="stack"></div>
 			<div class="inline-copy">
 				<h1>Stack</h1>
-				<p>Time yourself and stack the blocks as high as you can!</p>
+				<p>Time yourself and stack the blocks as high as you can! Compete for the top score worldwide and admire the beautiful high quality graphics.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.ketchapp.stack&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -561,6 +588,7 @@
 			<div class="inline-copy">
 				<h1>VSCO</h1>
 				<p>Maximize the quality of your mobile photography and install this app right now.</p>
+				<p><a href="https://play.google.com/store/apps/details?id=com.vsco.cam&hl=en" target="_blank"><span>Download here</span></a></p>
 			</div>
 		</section>
 
@@ -574,8 +602,8 @@
 		<div class="sources">
 			<h1>Sources</h1>
 			<ol>
-				<li><span class="sourceName">100 Best iPhone Apps of 2015:</span> <a href="http://mashable.com/2015/12/08/100-best-iphone-apps/#3fMCDsrimkqp">http://mashable.com/2015/12/08/100-best-iphone-apps/#3fMCDsrimkqp</a></li>
-				<li><span class="sourceName">Clash Royale | Google Play:</span> <a href="https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=en">https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=en</a></li>
+				<li><span class="sourceName">100 Best iPhone Apps of 2015:</span> <a href="http://mashable.com/2015/12/08/100-best-iphone-apps/#3fMCDsrimkqp" target="_blank">http://mashable.com/2015/12/08/100-best-iphone-apps/#3fMCDsrimkqp</a></li>
+				<li><span class="sourceName">Clash Royale | Google Play:</span> <a href="https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=en" target="_blank">https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=en</a></li>
 			</ol>
 
 			<p>designed by <a href="www.halimatubakarr.com">halimatu bakarr</a> (keep in mind this site is mostly based on my opinion! Built with ❤)</p>
@@ -586,13 +614,13 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 <script src="js/jquery.colorbox-min.js"></script>
 <script src="js/jquery.sticky.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.animateNumber.min.js"></script>
 <script src="js/scrollIt.min.js" type="text/javascript"></script>
-<script src="js/responsive-nav.min.js"></script>
-<script src="js/dots.js"></script>
+<script src="js/bigSlide.min.js"></script>
 <script src="js/index.js"></script>
 
 </body>

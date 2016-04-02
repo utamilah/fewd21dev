@@ -1,17 +1,35 @@
 $(document).ready(function(e){
 	//Examples of how to assign the Colorbox event to elements			
-	$(".inline").colorbox({inline:true});
 
-	$('.popfilter').mixItUp();
+	$(".inline").colorbox({
+		inline: true,
+		width: "75%",
+		reposition: true
+	});
 
-	$('.newfilter').mixItUp();
-
-	$(".nav").sticky({topSpacing:0});
-	$(".navigation").sticky({topSpacing:0});
+	$.colorbox.close();
 
 	$.scrollIt();
 
+	$('.appContainer').mixItUp();
+
 	$('.downArrow').addClass('animated bounce');
+
+	$('.menu-link').bigSlide({
+ 		easyClose: true,
+ 		speed: 100
+	 });
+
+	 $('.nav > ul > li > a').click(function(){
+	 	console.log('close me when clicked');
+	 	$('#menu').css('left','-15.625em');
+	 	$('#menu-toggle').css('left','0');
+	 });
+
+	 if ($(window).width() < 650) {
+            $('.appContainer').mixItUp('destroy', true);
+            console.log('destroy mixItUp');
+        }
 	
 });
 
@@ -50,4 +68,12 @@ var waypoints = $('.stats').waypoint({
 	);
 
   }
-})
+});
+
+
+
+
+
+
+
+
